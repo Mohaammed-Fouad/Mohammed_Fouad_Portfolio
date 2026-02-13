@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)file:///C:/Users/AL-MOSTAFA/Downloads/mohammed-fouad-professional_1.html -->
+<html lang="en" data-theme="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Fouad | Computational Chemist &amp; Cheminformatician</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Mohammed Fouad _ Computational Chemist &amp; Cheminformatician_files/css2" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Light Mode Colors */
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --bg-tertiary: #e9ecef;
+            --text-primary: #1a1a2e;
+            --text-secondary: #4a4a68;
+            --text-tertiary: #6b6b85;
+            --accent-primary: #0f4c81;
+            --accent-secondary: #1e88e5;
+            --accent-tertiary: #64b5f6;
+            --border-color: #dee2e6;
+            --shadow-color: rgba(0, 0, 0, 0.08);
+            --card-bg: #ffffff;
+            --nav-bg: rgba(255, 255, 255, 0.95);
+        }
+
+        [data-theme="dark"] {
+            /* Dark Mode Colors */
+            --bg-primary: #0a1628;
+            --bg-secondary: #132037;
+            --bg-tertiary: #1a2a45;
+            --text-primary: #e8eaed;
+            --text-secondary: #b8bcc4;
+            --text-tertiary: #8a8f9b;
+            --accent-primary: #64b5f6;
+            --accent-secondary: #42a5f5;
+            --accent-tertiary: #1e88e5;
+            --border-color: #2a3a55;
+            --shadow-color: rgba(0, 0, 0, 0.3);
+            --card-bg: #132037;
+            --nav-bg: rgba(10, 22, 40, 0.95);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: var(--nav-bg);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.25rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            letter-spacing: -0.3px;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-primary);
+        }
+
+        .theme-toggle {
+            background: none;
+            border: 2px solid var(--border-color);
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .theme-toggle:hover {
+            border-color: var(--accent-primary);
+            background: var(--bg-secondary);
+        }
+
+        /* Mobile Menu */
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--text-primary);
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 100px;
+            position: relative;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .hero-image-container {
+            position: relative;
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .hero-image-frame {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: -20px;
+            bottom: -20px;
+            border: 2px solid var(--accent-primary);
+            border-radius: 12px;
+            z-index: 0;
+        }
+
+        .hero-image {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 4/5;
+            border-radius: 12px;
+            overflow: hidden;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            z-index: 1;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .photo-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+            color: var(--text-tertiary);
+            font-size: 1rem;
+            text-align: center;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-label {
+            display: inline-block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--accent-primary);
+            margin-bottom: 1.5rem;
+            padding: 0.5rem 1rem;
+            background: var(--bg-secondary);
+            border-radius: 4px;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1.5px;
+            color: var(--text-primary);
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--accent-primary);
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: var(--accent-primary);
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px var(--shadow-color);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--accent-primary);
+            border: 2px solid var(--accent-primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--accent-primary);
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        /* Section */
+        section {
+            padding: 6rem 0;
+        }
+
+        .section-header {
+            margin-bottom: 4rem;
+        }
+
+        .section-number {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--accent-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            line-height: 1.8;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .about-text {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: var(--text-secondary);
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .about-highlight {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-primary);
+        }
+
+        .about-highlight h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .about-stats {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .stat-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--accent-primary);
+            color: #ffffff;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .stat-content h4 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1;
+        }
+
+        .stat-content p {
+            font-size: 0.9rem;
+            color: var(--text-tertiary);
+            margin: 0;
+        }
+
+        /* Publications */
+        .publications-grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .publication-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .publication-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px var(--shadow-color);
+            border-color: var(--accent-primary);
+        }
+
+        .publication-badge {
+            display: inline-block;
+            padding: 0.4rem 0.9rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .badge-published {
+            background: rgba(76, 175, 80, 0.15);
+            color: #2e7d32;
+        }
+
+        [data-theme="dark"] .badge-published {
+            background: rgba(76, 175, 80, 0.2);
+            color: #81c784;
+        }
+
+        .badge-in-progress {
+            background: rgba(33, 150, 243, 0.15);
+            color: #1565c0;
+        }
+
+        [data-theme="dark"] .badge-in-progress {
+            background: rgba(33, 150, 243, 0.2);
+            color: #64b5f6;
+        }
+
+        .publication-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.8rem;
+            line-height: 1.5;
+        }
+
+        .publication-meta {
+            font-size: 0.95rem;
+            color: var(--accent-primary);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .publication-description {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .publication-actions {
+            display: flex;
+            gap: 0.8rem;
+            margin-top: 1.5rem;
+        }
+
+        .card-btn {
+            padding: 0.6rem 1.2rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .card-btn-primary {
+            background: var(--accent-primary);
+            color: #ffffff;
+        }
+
+        .card-btn-primary:hover {
+            background: var(--accent-secondary);
+        }
+
+        .card-btn-secondary {
+            background: transparent;
+            color: var(--accent-primary);
+            border: 1px solid var(--accent-primary);
+        }
+
+        .card-btn-secondary:hover {
+            background: var(--accent-primary);
+            color: #ffffff;
+        }
+
+        /* Workshops */
+        .workshops-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .workshop-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .workshop-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px var(--shadow-color);
+            border-color: var(--accent-primary);
+        }
+
+        .workshop-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--bg-secondary);
+            border: 2px solid var(--accent-primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .workshop-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .workshop-org {
+            font-size: 0.9rem;
+            color: var(--accent-primary);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .workshop-description {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-category {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2.5rem;
+        }
+
+        .skill-category h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .skill-icon {
+            font-size: 1.5rem;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+
+        .skill-tag {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            padding: 0.6rem 1rem;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            background: var(--accent-primary);
+            color: #ffffff;
+            border-color: var(--accent-primary);
+            transform: translateY(-2px);
+        }
+
+        /* Education Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 3rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -3.5rem;
+            top: 0.3rem;
+            width: 14px;
+            height: 14px;
+            background: var(--accent-primary);
+            border: 3px solid var(--bg-primary);
+            border-radius: 50%;
+        }
+
+        .timeline-item h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-institution {
+            font-size: 1rem;
+            color: var(--accent-primary);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-detail {
+            font-size: 0.95rem;
+            color: var(--text-tertiary);
+            margin-bottom: 0.8rem;
+        }
+
+        .timeline-thesis {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            padding: 1rem;
+            background: var(--bg-secondary);
+            border-radius: 6px;
+            border-left: 3px solid var(--accent-primary);
+            margin-top: 1rem;
+        }
+
+        .timeline-thesis strong {
+            color: var(--text-primary);
+        }
+
+        /* Contact */
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 1rem 2rem;
+            background: var(--card-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-primary);
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            border-color: var(--accent-primary);
+            background: var(--accent-primary);
+            color: #ffffff;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px var(--shadow-color);
+        }
+
+        .social-link svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer p {
+            color: var(--text-tertiary);
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-tech {
+            font-size: 0.9rem;
+            color: var(--text-tertiary);
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .hero-image-wrapper {
+                max-width: 350px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .workshops-grid,
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 300px;
+                height: 100vh;
+                background: var(--card-bg);
+                flex-direction: column;
+                padding: 5rem 2rem;
+                border-left: 1px solid var(--border-color);
+                transition: right 0.3s ease;
+                gap: 1.5rem;
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .nav-links a {
+                font-size: 1.1rem;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 4rem 0;
+            }
+
+            .container {
+                padding: 0 1.5rem;
+            }
+
+            .timeline {
+                padding-left: 2rem;
+            }
+
+            .timeline-item::before {
+                left: -2.5rem;
+            }
+        }
+
+        /* Smooth Transitions */
+        * {
+            transition-property: background-color, color, border-color;
+            transition-duration: 0.3s;
+            transition-timing-function: ease;
+        }
+
+        button, a {
+            transition-property: all;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Mohammed Fouad</div>
+            <div class="nav-right">
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span style="transform: none;"></span>
+                    <span style="opacity: 1;"></span>
+                    <span style="transform: none;"></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="file:///C:/Users/AL-MOSTAFA/Downloads/mohammed-fouad-professional_1.html#about">About</a></li>
+                    <li><a href="file:///C:/Users/AL-MOSTAFA/Downloads/mohammed-fouad-professional_1.html#publications">Publications</a></li>
+                    <li><a href="file:///C:/Users/AL-MOSTAFA/Downloads/mohammed-fouad-professional_1.html#workshops">Training</a></li>
+                    <li><a href="file:///C:/Users/AL-MOSTAFA/Downloads/mohammed-fouad-professional_1.html#skills">Skills</a></li>
+                    <li><a href="file:///C:/Users/AL-MOSTAFA/Downloads/mohammed-fouad-professional_1.html#education">Education</a></li>
+                    <li><a href="file:///C:/Users/AL-MOSTAFA/Downloads/mohammed-fouad-professional_1.html#contact">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀️</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-label">Computational Chemist &amp; Cheminformatician</div>
+                    <h1 class="hero-title">Mohammed Fouad</h1>
+                    <p class="hero-subtitle">CADD and Data Science</p>
+                    <p class="hero-description">
+                        Graduate Researcher specializing in QSAR, Cheminformatics, and Machine Learning applications in Drug Discovery.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="file:///C:/Users/AL-MOSTAFA/Downloads/mohammed-fouad-professional_1.html#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="file:///C:/Users/AL-MOSTAFA/Downloads/mohammed-fouad-professional_1.html#publications" class="btn btn-secondary">View Research</a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-frame"></div>
+                        <div class="hero-image">
+                            <!-- Replace src with your actual photo -->
+                            <img src="1701456046304.jpg" alt="Mohammed Fouad">
+                            <div class="photo-placeholder">
+                                Professional Photo<br>
+                                <small style="font-size: 0.85rem; margin-top: 0.5rem; display: block;">Replace with your image by updating the src attribute in the HTML</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-number">01.</div>
+                <h2 class="section-title">About</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Graduate researcher with applied knowledge in molecular modeling and cheminformatics.
+                    </p>
+                    <p>
+                        My work combines wet-lab chemistry skills with computational approaches. I have background in organic synthesis, characterization techniques (NMR, IR, UV-Vis, HPLC), and computational tools including RDKit, molecular dynamics simulations, and quantum chemistry calculations.
+                    </p>
+                    <p>
+                        My research interests include developing computational tools to accelerate drug design, combining advanced cheminformatics techniques with machine learning to predict molecular properties and optimize therapeutic candidates.
+                    </p>
+                </div>
+                <div class="about-highlight">
+                    <h3>Research Impact</h3>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-icon">3+</div>
+                            <div class="stat-content">
+                                <h4>Research</h4>
+                                <p>Contributions</p>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">4+</div>
+                            <div class="stat-content">
+                                <h4>Workshops</h4>
+                                <p>Participation</p>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">10+</div>
+                            <div class="stat-content">
+                                <h4>Tools</h4>
+                                <p>Used</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-number">02.</div>
+                <h2 class="section-title">Publications &amp; Research</h2>
+                <p class="section-description">
+                    Current research focuses on machine learning applications in medicinal chemistry, multifunctional nanomaterials, and antimicrobial drug design.
+                </p>
+            </div>
+            <div class="publications-grid">
+                <div class="publication-card">
+                    <span class="publication-badge badge-published">Published • 2026</span>
+                    <h3>Amphiphilic cellulose and alginate-functionalized magnetic ZIF-8 nanocomposites for dinitrophenol removal, colorimetric H₂O₂ sensing, and antibacterial applications</h3>
+                    <p class="publication-meta">International Journal of Biological Macromolecules (2026)</p>
+                    <p class="publication-description">
+                        Developed a multifunctional nanozyme platform demonstrating lower Km values than natural HRP, achieving 98.7% removal efficiency for dinitrophenol, with dual functionality in colorimetric sensing and water treatment applications.
+                    </p>
+                    <div class="publication-actions">
+                        <a href="https://doi.org/10.1016/j.ijbiomac.2024.137144" target="_blank" class="card-btn card-btn-primary">View Publication</a>
+                    </div>
+                </div>
+
+                <div class="publication-card">
+                    <span class="publication-badge badge-in-progress">Review • In Preparation</span>
+                    <h3>Quinoline and Quinolone Derivatives as Antimicrobial Agents: A Comparative Review of Synthesis, Reactivity, and SAR Insights</h3>
+                    <p class="publication-meta">Review Article</p>
+                    <p class="publication-description">
+                        Systematic analysis of quinoline and quinolone scaffolds in antimicrobial drug design, examining structure-activity relationships (SAR) and recent developments in combating drug resistance mechanisms.
+                    </p>
+                </div>
+
+                <div class="publication-card">
+                    <span class="publication-badge badge-in-progress">Research • In Progress</span>
+                    <h3>Design and Predict the Potential of Pyrazole-based Anti-Inflammatory agents using Fingerprint Machine Learning</h3>
+                    <p class="publication-meta">Computational Drug Design Study</p>
+                    <p class="publication-description">
+                        Application of molecular fingerprint-based machine learning to identify and optimize pyrazole derivatives with enhanced anti-inflammatory activity and improved selectivity profiles.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshops Section -->
+    <section id="workshops">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-number">03.</div>
+                <h2 class="section-title">Workshops & Training</h2>
+                <p class="section-description">
+                    Applied training in computational chemistry, drug design methodologies (SBDD & LBDD), and strategic problem-solving.
+                </p>
+            </div>
+            <div class="workshops-grid">
+                <div class="workshop-card">
+                    <div class="workshop-icon">⚛️</div>
+                    <h3>Virtual Winter School on Computational Chemistry</h3>
+                    <p class="workshop-org">CECAM (Centre Européen de Calcul Atomique et Moléculaire)</p>
+                    <p class="workshop-description">
+                        Intensive training in quantum chemistry, molecular dynamics simulations using GROMACS, and electronic structure calculations with Q-Chem. Focused on practical applications in drug discovery and materials science.
+                    </p>
+                </div>
+
+                <div class="workshop-card">
+                    <div class="workshop-icon">🧬</div>
+                    <h3>9th ADD In Silico Drug Design Workshop</h3>
+                    <p class="workshop-org">Palacký University Olomouc</p>
+                    <p class="workshop-description">
+                        Comprehensive training in structure-based drug design, ligand-based drug design, pharmacophore modeling, virtual screening methodologies, and de novo design strategies. Participated in a competitive drug design challenge.
+                    </p>
+                    <div class="publication-actions" style="margin-top: 1rem;">
+                        <a href="https://github.com/Mohaammed-Fouad/Ligand-Based-Virtual-Screening" target="_blank" class="card-btn card-btn-secondary">View Challenge Code</a>
+                    </div>
+                </div>
+
+                <div class="workshop-card">
+                    <div class="workshop-icon">📊</div>
+                    <h3>McKinsey Forward Program</h3>
+                    <p class="workshop-org">McKinsey &amp; Company</p>
+                    <p class="workshop-description">
+                        Advanced-level training in complex problem synthesis, strategic thinking frameworks, and digital leadership. Focus on translating technical insights into actionable business strategies in pharmaceutical and biotech contexts.
+                    </p>
+                </div>
+
+                <div class="workshop-card">
+                    <div class="workshop-icon">🐍</div>
+                    <h3>Python for Cheminformatics-Driven Molecular Docking</h3>
+                    <p class="workshop-org">PDB (Protein Data Bank) & MolSSI (Molecular Sciences Software Institute)</p>
+                    <p class="workshop-description">
+                        Hands-on training in Python-based cheminformatics workflows, utilizing RDKit for molecular manipulation and gnina for molecular docking. Focused on searching BindingDB datasets, performing fingerprint analysis, and exploring ligand binding to the SARS-CoV-2 main protease via Google Colab.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-number">04.</div>
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-description">
+                    Comprehensive expertise spanning computational chemistry, data science, and experimental techniques.
+                </p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>
+                        <span class="skill-icon">⚛️</span>
+                        Computational Chemistry
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">RDKit</span>
+                        <span class="skill-tag">Py3Dmol</span>
+                        <span class="skill-tag">Mols2grid</span>
+                        <span class="skill-tag">GROMACS</span>
+                        <span class="skill-tag">Q-Chem</span>
+                        <span class="skill-tag">ORCA</span>
+                        <span class="skill-tag">Molecular Docking</span>
+                        <span class="skill-tag">QSAR Modeling</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <span class="skill-icon">📊</span>
+                        Data Science &amp; ML
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">SHAP</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Jupyter</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <span class="skill-icon">🧪</span>
+                        Wet Lab Techniques
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Organic Synthesis</span>
+                        <span class="skill-tag">IR/NMR/UV-Vis</span>
+                        <span class="skill-tag">HPLC</span>
+                        <span class="skill-tag">SEM</span>
+                        <span class="skill-tag">TEM</span>
+                        <span class="skill-tag">XRD</span>
+                        <span class="skill-tag">Antimicrobial Testing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-number">05.</div>
+                <h2 class="section-title">Education &amp; Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>B.Sc. in Chemistry</h3>
+                    <p class="timeline-institution">Al-Azhar University</p>
+                    <p class="timeline-detail">Grade: Good</p>
+                    <div class="timeline-thesis">
+                        <strong>Thesis:</strong> Cellulose-Based Electrode for Supercapacitors: Harnessing Rice Straw for Sustainable Energy Storage
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Research Internship</h3>
+                    <p class="timeline-institution">Drug Research Center, British University in Egypt</p>
+                    <p class="timeline-detail">Molecular modeling and drug design</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Research Internship</h3>
+                    <p class="timeline-institution">Egyptian Atomic Energy Authority</p>
+                    <p class="timeline-detail">Advanced materials characterization</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Introduction to Data Science with Python</h3>
+                    <p class="timeline-institution">HarvardX / edX</p>
+                    <p class="timeline-detail">Python-based data science fundamentals</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-number">06.</div>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <p class="contact-text">
+                    I am always open to discussing the intersection of molecular discovery and data science. Let's connect to explore how we can advance the field through computational rigor.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/mohammed-fouad-chem" target="_blank" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/Mohaammed-Fouad" target="_blank" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="mailto:mohaammed.fouad@gmail.com" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://orcid.org/0009-0005-2173-557X" target="_blank" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                            <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2Z"></path>
+                            <path d="M9 16V8"></path><path d="M15 16V8"></path>
+                        </svg>
+                        <span>ORCID</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed &amp; Built by Mohammed Fouad • 2026</p>
+            <p class="footer-tech">Computational Chemistry • Cheminformatics • Data Analysis</p>
+        </div>
+    </footer>
+
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        
+        // Check for saved theme preference
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', currentTheme);
+        themeToggle.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+
+        // Mobile Menu Toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            
+            // Animate hamburger
+            const spans = mobileToggle.querySelectorAll('span');
+            if (navLinks.classList.contains('active')) {
+                spans[0].style.transform = 'rotate(45deg) translateY(10px)';
+                spans[1].style.opacity = '0';
+                spans[2].style.transform = 'rotate(-45deg) translateY(-10px)';
+            } else {
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+            }
+        });
+
+        // Close mobile menu on link click
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                const spans = mobileToggle.querySelectorAll('span');
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navLinks.contains(e.target) && !mobileToggle.contains(e.target)) {
+                navLinks.classList.remove('active');
+                const spans = mobileToggle.querySelectorAll('span');
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+            }
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body></html>
